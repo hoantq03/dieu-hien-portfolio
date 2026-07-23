@@ -5,7 +5,7 @@ export function CTA() {
 
   return (
     <section className="section-cta">
-      <img src="/img/cta-bg.webp" alt="" />
+      <img src="/img/cta-bg.png" alt="" />
       <div className="cta-inner">
         <h2>{t.cta.title}</h2>
         <p className="cta-copy">{t.cta.copy}</p>

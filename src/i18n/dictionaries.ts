@@ -2,27 +2,27 @@ import type { Dictionary } from './types'
 
 const projectMedia = {
   omachi: {
-    cover: '/img/projects/project-1/cover.webp',
+    cover: '/img/projects/project-1/cover.png',
     gallery: [
-      '/img/projects/project-1/cover.webp',
+      '/img/projects/project-1/cover.png',
       '/img/projects/project-1/1.webp',
       '/img/projects/project-1/2.webp',
       '/img/projects/project-1/3.webp',
     ],
   },
   facebook: {
-    cover: '/img/projects/project-2/cover.webp',
+    cover: '/img/projects/project-2/cover.jpg',
     gallery: [
-      '/img/projects/project-2/cover.webp',
+      '/img/projects/project-2/cover.jpg',
       '/img/projects/project-2/1.webp',
       '/img/projects/project-2/2.webp',
       '/img/projects/project-2/3.webp',
     ],
   },
   ewom: {
-    cover: '/img/projects/project-3/cover.webp',
+    cover: '/img/projects/project-3/cover.jpg',
     gallery: [
-      '/img/projects/project-3/cover.webp',
+      '/img/projects/project-3/cover.jpg',
       '/img/projects/project-3/1.webp',
       '/img/projects/project-3/2.webp',
     ],

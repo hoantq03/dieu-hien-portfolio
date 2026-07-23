@@ -376,7 +376,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 100% 50%;
+  object-position: center center;
 }
 
 .hero-overlay {
@@ -442,7 +442,7 @@ p {
 .name-row {
   display: inline-flex;
   flex-wrap: nowrap;
-  gap: 0.045em;
+  gap: 0.08em;
   align-items: baseline;
   transform-origin: left center;
   will-change: transform;
@@ -451,10 +451,11 @@ p {
 .name {
   display: inline-flex;
   flex-shrink: 0;
+  gap: 0.08em;
 }
 
 .name + .name {
-  margin-left: 0.28em;
+  margin-left: 0.4em;
 }
 
 .letter-wrapper {
@@ -474,7 +475,7 @@ p {
   display: inline-block;
   white-space: nowrap;
   /* tránh cắt dấu khi paint */
-  padding: 0.12em 0.01em;
+  padding: 0.12em 0.04em;
   overflow: visible;
 }
 
@@ -508,7 +509,7 @@ p {
 /* ========== ABOUT ========== */
 .section-about {
   background: var(--white-200);
-  padding: 6rem 0 4rem;
+  padding: 6rem 0 5.5rem;
 }
 
 .section-about .section-label,
@@ -531,21 +532,21 @@ p {
 }
 
 .about-copy-offset {
-  display: grid;
-  grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
-  gap: 1.5rem;
+  display: block;
   margin-top: 2.75rem;
 }
 
 .about-copy {
-  grid-column: 2;
-  max-width: 38rem;
+  max-width: 68rem;
+  width: 100%;
   margin: 0;
+  line-height: 1.55;
 }
 
 /* ========== PROJECTS ========== */
 .section-projects {
   background: var(--white-200);
+  padding-top: 3rem;
   padding-bottom: 4rem;
 }
 
@@ -1216,7 +1217,11 @@ p {
   }
 
   .about-copy-offset {
-    grid-template-columns: 0.18fr 0.82fr;
+    display: block;
+  }
+
+  .about-copy {
+    max-width: 100%;
   }
 
   .project-modal-heading,
@@ -1260,11 +1265,11 @@ p {
   }
 
   .about-copy-offset {
-    grid-template-columns: 1fr;
+    display: block;
   }
 
   .about-copy {
-    grid-column: 1;
+    max-width: 100%;
   }
 
   .project-card {
