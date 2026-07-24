@@ -585,10 +585,41 @@ p {
   height: 0.85rem;
   margin-top: 0.2rem;
   border-radius: 50%;
-  border: 2px solid var(--black-300);
-  background: var(--white-200);
+  border: 2px solid #3b82f6;
+  background: #3b82f6;
+  box-shadow:
+    0 0 0 4px rgba(59, 130, 246, 0.2),
+    0 0 12px 2px rgba(59, 130, 246, 0.55),
+    0 0 28px 6px rgba(59, 130, 246, 0.35);
   position: relative;
   z-index: 1;
+  animation: experience-marker-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes experience-marker-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow:
+      0 0 0 4px rgba(59, 130, 246, 0.2),
+      0 0 12px 2px rgba(59, 130, 246, 0.55),
+      0 0 28px 6px rgba(59, 130, 246, 0.35);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(0.92);
+    box-shadow:
+      0 0 0 2px rgba(59, 130, 246, 0.12),
+      0 0 6px 1px rgba(59, 130, 246, 0.3),
+      0 0 14px 3px rgba(59, 130, 246, 0.18);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-marker {
+    animation: none;
+  }
 }
 
 .experience-content {
