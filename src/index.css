@@ -518,29 +518,121 @@ p {
   padding-left: 0;
 }
 
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 3.5rem 4.5rem;
+  align-items: start;
+}
+
+.about-intro .section-label,
+.about-experience .section-label {
+  margin-bottom: 1.25rem;
+}
+
 .about-headline {
   font-family: var(--font-display);
-  font-size: clamp(1.85rem, 3.35vw, 3.35rem);
+  font-size: clamp(1.45rem, 2.4vw, 2.35rem);
   font-weight: 700;
-  line-height: 130%;
+  line-height: 135%;
   text-transform: none;
   width: 100%;
-  max-width: 100%;
-  margin: 0;
+  max-width: 28ch;
+  margin: 0 0 1.5rem;
   letter-spacing: -0.02em;
   white-space: pre-line;
 }
 
-.about-copy-offset {
-  display: block;
-  margin-top: 2.75rem;
-}
-
 .about-copy {
-  max-width: 68rem;
+  max-width: 34rem;
   width: 100%;
   margin: 0;
   line-height: 1.55;
+  font-size: clamp(1rem, 1.15vw, 1.15rem);
+}
+
+.experience-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0.45rem;
+  bottom: 0.45rem;
+  left: 0.4rem;
+  width: 1px;
+  background: var(--grey-divider);
+}
+
+.experience-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1rem 1fr;
+  gap: 1rem;
+  padding-bottom: 2.25rem;
+}
+
+.experience-item:last-child {
+  padding-bottom: 0;
+}
+
+.experience-marker {
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-top: 0.2rem;
+  border-radius: 50%;
+  border: 2px solid var(--black-300);
+  background: var(--white-200);
+  position: relative;
+  z-index: 1;
+}
+
+.experience-content {
+  min-width: 0;
+}
+
+.experience-period {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--grey-400);
+  margin-bottom: 0.4rem;
+}
+
+.experience-org {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.experience-role {
+  margin: 0 0 0.75rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--black-400);
+}
+
+.experience-bullets {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.experience-bullets li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--grey-400);
 }
 
 /* ========== PROJECTS ========== */
@@ -1216,8 +1308,14 @@ p {
     padding: 0 1.25rem 3rem;
   }
 
-  .about-copy-offset {
-    display: block;
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .about-headline {
+    max-width: none;
+    font-size: clamp(1.4rem, 5.5vw, 1.9rem);
   }
 
   .about-copy {
@@ -1264,12 +1362,8 @@ p {
     font-size: 1.35rem;
   }
 
-  .about-copy-offset {
-    display: block;
-  }
-
-  .about-copy {
-    max-width: 100%;
+  .about-headline {
+    white-space: normal;
   }
 
   .project-card {

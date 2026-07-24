@@ -5,26 +5,25 @@ const projectMedia = {
     cover: '/img/projects/project-1/cover.png',
     gallery: [
       '/img/projects/project-1/cover.png',
-      '/img/projects/project-1/1.webp',
-      '/img/projects/project-1/2.webp',
-      '/img/projects/project-1/3.webp',
+      '/img/projects/project-1/1.png',
+      '/img/projects/project-1/2.jpg',
     ],
   },
   facebook: {
     cover: '/img/projects/project-2/cover.jpg',
     gallery: [
       '/img/projects/project-2/cover.jpg',
-      '/img/projects/project-2/1.webp',
-      '/img/projects/project-2/2.webp',
-      '/img/projects/project-2/3.webp',
+      '/img/projects/project-2/1.jpg',
+      '/img/projects/project-2/2.jpg',
+      '/img/projects/project-2/3.jpg',
     ],
   },
   ewom: {
     cover: '/img/projects/project-3/cover.jpg',
     gallery: [
       '/img/projects/project-3/cover.jpg',
-      '/img/projects/project-3/1.webp',
-      '/img/projects/project-3/2.webp',
+      '/img/projects/project-3/1.jpg',
+      '/img/projects/project-3/2.jpg',
     ],
   },
 }
@@ -38,9 +37,39 @@ export const dictionaries: Record<'vi' | 'en', Dictionary> = {
     },
     about: {
       label: '/GIỚI THIỆU',
+      experienceLabel: '/KINH NGHIỆM',
       headline:
         'Xin chào, mình là Nguyễn Thị Diệu Hiền —\nsinh viên năm cuối ngành Marketing tại Trường Đại học Công Thương TP.HCM.',
-      body: 'Mình có kinh nghiệm thực tập trong lĩnh vực Content Marketing, đặc biệt với nền tảng TikTok, từ lên ý tưởng, viết kịch bản đến quay dựng và biên tập video. Bên cạnh đó, mình từng tham gia nghiên cứu khoa học, giúp rèn luyện tư duy phân tích và nghiên cứu. Mình mong muốn được học hỏi, phát triển chuyên môn và tạo ra những giá trị tích cực thông qua các hoạt động Marketing.',
+      body: 'Đã có kinh nghiệm thực tập Content Marketing và sản xuất nội dung trên TikTok: lên ý tưởng, xây dựng kịch bản, quay dựng và biên tập video. Đồng thời có tư duy nghiên cứu qua đề tài khoa học. Mong muốn phát triển trong môi trường chuyên nghiệp, không ngừng học hỏi và đóng góp vào các hoạt động Marketing của doanh nghiệp.',
+      experiences: [
+        {
+          period: '08/2025 – 02/2026',
+          org: 'Công ty Cổ phần VIDOCO',
+          role: 'Thực tập sinh Content Marketing',
+          bullets: [
+            'Lên ý tưởng và xây dựng kịch bản nội dung TikTok.',
+            'Quay dựng, biên tập video ngắn phục vụ truyền thông.',
+            'Tham gia review sản phẩm và xây dựng hình ảnh thương hiệu.',
+            'Hỗ trợ team Media trong quá trình setup và sản xuất nội dung.',
+          ],
+        },
+        {
+          period: '02/2025',
+          org: 'Trường Đại học Công Thương TP. Hồ Chí Minh',
+          role: 'Quay quảng cáo phục vụ môn học',
+          bullets: [
+            'Lên ý tưởng, tổ chức sản xuất và quay video quảng cáo cho sản phẩm, đảm bảo nội dung sáng tạo, thu hút và phù hợp với chiến lược thương hiệu.',
+          ],
+        },
+        {
+          period: '2024 – 2025',
+          org: 'YBOX',
+          role: 'CTV Marketing',
+          bullets: [
+            'Lên ý tưởng và biên soạn nội dung trên các nền tảng theo định hướng và yêu cầu của đội ngũ Marketing.',
+          ],
+        },
+      ],
     },
     projects: {
       label: '/DỰ ÁN TIÊU BIỂU',
@@ -105,27 +134,27 @@ export const dictionaries: Record<'vi' | 'en', Dictionary> = {
         tool: 'Marketing Plan',
         client: 'Omachi',
         summary:
-          'Xây dựng kế hoạch Marketing cho chiến dịch “Omachi Ươm Mầm” nhằm tăng nhận diện thương hiệu và thúc đẩy doanh số thông qua hoạt động truyền thông gắn với thông điệp bảo vệ môi trường.',
+          'Xây dựng kế hoạch Marketing cho chiến dịch “Omachi Ươm Mầm”: mỗi ly mì kèm một gói mầm làm từ bã mía tự phân hủy, thân thiện với môi trường. Người dùng có thể trồng mầm ngay trong ly và tham gia đổi quà — kết hợp trải nghiệm sản phẩm với thông điệp xanh nhằm tăng nhận diện thương hiệu và thúc đẩy doanh số.',
         challenge:
-          'Nghiên cứu thị trường và khách hàng mục tiêu. Xây dựng ý tưởng và kế hoạch truyền thông. Lập mục tiêu, ngân sách và tiến độ triển khai chiến dịch.',
+          'Nghiên cứu thị trường FMCG và hành vi người tiêu dùng quan tâm sản phẩm xanh. Xây dựng ý tưởng chiến dịch xoay quanh cơ chế “mỗi ly một gói mầm – trồng trong ly và đổi quà”. Lập kế hoạch truyền thông, mục tiêu, ngân sách và tiến độ triển khai.',
         solution:
-          'Lập kế hoạch Marketing. Nghiên cứu và phân tích thị trường. Xây dựng kế hoạch truyền thông. Lập mục tiêu và ngân sách.',
+          'Lập kế hoạch Marketing. Nghiên cứu và phân tích thị trường. Xây dựng kế hoạch truyền thông gắn trải nghiệm sản phẩm. Lập mục tiêu, ngân sách và timeline chiến dịch.',
         ...projectMedia.omachi,
       },
       {
         id: 'facebook-launch',
-        title: 'Ra mắt thương hiệu trên Facebook',
+        title: 'Ra mắt thương hiệu HMedia trên Facebook',
         category: 'Social Content',
         year: '2024',
         industry: 'Sự kiện & Thương hiệu',
         tool: 'Facebook',
-        client: 'Dự án học thuật',
+        client: 'HMedia',
         summary:
-          'Tổ chức sự kiện ra mắt cho một thương hiệu và sản phẩm giả định, xây dựng kế hoạch truyền thông trên nền tảng Facebook nhằm quảng bá sản phẩm và thu hút người tham gia.',
+          'Xây dựng chiến dịch ra mắt thương hiệu HMedia trên Facebook: từ nhận diện thương hiệu, nội dung truyền thông đến tổ chức sự kiện launch, nhằm giới thiệu thương hiệu/sản phẩm và thu hút cộng đồng người theo dõi ngay từ giai đoạn đầu.',
         challenge:
-          'Xây dựng và quản lý trang Facebook của dự án. Thiết kế logo và hình ảnh nhận diện thương hiệu. Lên ý tưởng, viết kịch bản và sản xuất nội dung. Tham gia làm diễn viên, mẫu ảnh trong các ấn phẩm truyền thông.',
+          'Xây dựng và vận hành fanpage Facebook của HMedia. Thiết kế logo cùng hệ thống hình ảnh nhận diện. Lên ý tưởng, viết kịch bản và sản xuất nội dung truyền thông. Tham gia làm diễn viên/mẫu ảnh trong các ấn phẩm. Phối hợp tổ chức sự kiện ra mắt thương hiệu.',
         solution:
-          'Xây dựng thương hiệu. Quản lý nội dung trên Facebook. Thiết kế hình ảnh cơ bản. Lên kịch bản và sản xuất nội dung. Làm việc nhóm và tổ chức sự kiện.',
+          'Xây dựng nhận diện thương hiệu. Quản lý nội dung Facebook. Thiết kế hình ảnh cơ bản. Lên kịch bản và sản xuất content. Làm việc nhóm và tổ chức sự kiện.',
         ...projectMedia.facebook,
       },
       {
@@ -137,11 +166,11 @@ export const dictionaries: Record<'vi' | 'en', Dictionary> = {
         tool: 'SPSS',
         client: 'Tạp chí Công Thương',
         summary:
-          'Thực hiện đề tài nghiên cứu khoa học về tác động của truyền miệng điện tử (eWOM) đến nhận diện thương hiệu xe công nghệ xanh SM của thế hệ Gen Z tại TP. Hồ Chí Minh. Đề tài được đăng trên Tạp chí Công Thương.',
+          'Thực hiện đề tài nghiên cứu khoa học về tác động của truyền miệng điện tử (eWOM) đến nhận diện thương hiệu xe công nghệ xanh SM đối với Gen Z tại TP. Hồ Chí Minh. Nghiên cứu làm rõ mối quan hệ giữa các yếu tố eWOM và brand awareness, từ đó đề xuất định hướng Marketing dựa trên dữ liệu. Đề tài được đăng trên Tạp chí Công Thương.',
         challenge:
-          'Xây dựng mô hình và bảng khảo sát nghiên cứu. Thu thập, xử lý và phân tích dữ liệu bằng SPSS. Phân tích kết quả và đề xuất giải pháp Marketing dựa trên dữ liệu.',
+          'Xác định vấn đề nghiên cứu, tổng quan lý thuyết và xây dựng mô hình nghiên cứu. Thiết kế bảng khảo sát, thu thập dữ liệu từ đối tượng Gen Z tại TP.HCM. Làm sạch, xử lý và phân tích dữ liệu bằng SPSS (thống kê mô tả, kiểm định độ tin cậy, phân tích nhân tố, kiểm định giả thuyết). Diễn giải kết quả và đề xuất giải pháp Marketing ứng dụng cho thương hiệu xe xanh SM. Hoàn thiện báo cáo và hỗ trợ quy trình xuất bản trên Tạp chí Công Thương.',
         solution:
-          'Nghiên cứu thị trường. Phân tích dữ liệu bằng SPSS. Tư duy phân tích và giải quyết vấn đề. Viết báo cáo nghiên cứu. Làm việc nhóm.',
+          'Nghiên cứu thị trường và hành vi người tiêu dùng. Thiết kế khảo sát và thu thập dữ liệu. Phân tích định lượng bằng SPSS. Tư duy phản biện, phân tích và giải quyết vấn đề. Viết báo cáo khoa học / học thuật. Đề xuất giải pháp Marketing dựa trên insight. Làm việc nhóm và quản lý tiến độ nghiên cứu.',
         ...projectMedia.ewom,
       },
     ],
@@ -154,9 +183,39 @@ export const dictionaries: Record<'vi' | 'en', Dictionary> = {
     },
     about: {
       label: '/WHO AM I',
+      experienceLabel: '/EXPERIENCE',
       headline:
         'Hi, I’m Nguyen Thi Dieu Hien —\na final-year Marketing student at Ho Chi Minh City University of Industry and Trade.',
-      body: 'I have internship experience in Content Marketing, especially on TikTok — from ideation and scripting to shooting and video editing. I have also taken part in academic research, which sharpened my analytical and research mindset. I’m eager to keep learning, grow professionally, and create meaningful impact through Marketing.',
+      body: 'I have internship experience in Content Marketing and TikTok content production — from ideation and scripting to shooting and editing. Academic research has also shaped my analytical mindset. I’m eager to grow in a professional environment, keep learning, and contribute to a company’s Marketing work.',
+      experiences: [
+        {
+          period: '08/2025 – 02/2026',
+          org: 'VIDOCO Joint Stock Company',
+          role: 'Content Marketing Intern',
+          bullets: [
+            'Ideated and scripted TikTok content.',
+            'Shot and edited short-form videos for communications.',
+            'Contributed to product reviews and brand imagery.',
+            'Supported the Media team with setup and content production.',
+          ],
+        },
+        {
+          period: '02/2025',
+          org: 'Ho Chi Minh City University of Industry and Trade',
+          role: 'Advertising shoot for coursework',
+          bullets: [
+            'Ideated, organized production, and shot an advertising video — creative, engaging, and aligned with brand strategy.',
+          ],
+        },
+        {
+          period: '2024 – 2025',
+          org: 'YBOX',
+          role: 'Marketing Collaborator',
+          bullets: [
+            'Ideated and wrote content across platforms based on the Marketing team’s direction and briefs.',
+          ],
+        },
+      ],
     },
     projects: {
       label: '/SELECTED PROJECTS',
@@ -221,27 +280,27 @@ export const dictionaries: Record<'vi' | 'en', Dictionary> = {
         tool: 'Marketing Plan',
         client: 'Omachi',
         summary:
-          'Built a marketing plan for the “Omachi Sprouting” campaign to increase brand awareness and drive sales through communications tied to an environmental-protection message.',
+          'Built a marketing plan for the “Omachi Sprouting” campaign: each noodle cup includes a sprout kit made from biodegradable sugarcane bagasse. Consumers can grow the sprouts in the cup and redeem them for rewards — turning an eco-friendly product experience into a brand engagement loop that drives awareness and sales.',
         challenge:
-          'Researched the market and target audience. Developed the campaign idea and communications plan. Set objectives, budget, and implementation timeline.',
+          'Researched the FMCG market and eco-conscious consumer behavior. Developed the campaign concept around “one cup, one sprout kit — grow in-cup and redeem rewards.” Built the communications plan, objectives, budget, and rollout timeline.',
         solution:
-          'Marketing planning. Market research and analysis. Communications planning. Goal-setting and budgeting.',
+          'Marketing planning. Market research and analysis. Communications planning tied to the product experience. Goal-setting, budgeting, and campaign timeline.',
         ...projectMedia.omachi,
       },
       {
         id: 'facebook-launch',
-        title: 'Brand Launch on Facebook',
+        title: 'HMedia Brand Launch on Facebook',
         category: 'Social Content',
         year: '2024',
         industry: 'Event & Branding',
         tool: 'Facebook',
-        client: 'Academic project',
+        client: 'HMedia',
         summary:
-          'Organized a launch event for a fictional brand and product, and built a Facebook communications plan to promote the product and attract attendees.',
+          'Led the HMedia brand launch on Facebook — from visual identity and content communications to the launch event — to introduce the brand/product and grow an early community of followers.',
         challenge:
-          'Built and managed the project Facebook page. Designed the logo and brand visuals. Ideated, scripted, and produced content. Appeared as talent/model in campaign assets.',
+          'Built and managed the HMedia Facebook page. Designed the logo and brand visual system. Ideated, scripted, and produced campaign content. Appeared as talent/model in key assets. Collaborated on organizing the brand launch event.',
         solution:
-          'Brand building. Facebook content management. Basic visual design. Scripting and content production. Teamwork and event organization.',
+          'Brand identity building. Facebook content management. Basic visual design. Scripting and content production. Teamwork and event organization.',
         ...projectMedia.facebook,
       },
       {
@@ -253,11 +312,11 @@ export const dictionaries: Record<'vi' | 'en', Dictionary> = {
         tool: 'SPSS',
         client: 'Industry and Trade Review',
         summary:
-          'Conducted a research project on how electronic word-of-mouth (eWOM) affects brand awareness of SM green mobility among Gen Z in Ho Chi Minh City. The paper was published in Industry and Trade Review.',
+          'Conducted an academic research project on how electronic word-of-mouth (eWOM) influences brand awareness of SM green mobility among Gen Z in Ho Chi Minh City. The study examined the relationship between eWOM factors and brand recognition, then proposed data-driven Marketing directions. The paper was published in Industry and Trade Review.',
         challenge:
-          'Built the research model and survey. Collected, processed, and analyzed data with SPSS. Interpreted findings and proposed data-driven Marketing solutions.',
+          'Defined the research problem, reviewed literature, and built the research model. Designed the survey and collected responses from Gen Z in Ho Chi Minh City. Cleaned, processed, and analyzed data with SPSS (descriptive statistics, reliability testing, factor analysis, hypothesis testing). Interpreted findings and proposed actionable Marketing recommendations for the SM green mobility brand. Finalized the research paper and supported the publication process with Industry and Trade Review.',
         solution:
-          'Market research. SPSS data analysis. Analytical and problem-solving thinking. Research writing. Teamwork.',
+          'Market and consumer behavior research. Survey design and data collection. Quantitative analysis with SPSS. Critical thinking, analysis, and problem-solving. Academic / research writing. Data-driven Marketing recommendations. Teamwork and research project management.',
         ...projectMedia.ewom,
       },
     ],

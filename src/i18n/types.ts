@@ -24,8 +24,15 @@ export type Dictionary = {
   }
   about: {
     label: string
+    experienceLabel: string
     headline: string
     body: string
+    experiences: {
+      period: string
+      org: string
+      role: string
+      bullets: string[]
+    }[]
   }
   projects: {
     label: string
