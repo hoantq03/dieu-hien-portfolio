@@ -2,10 +2,10 @@ import type { Dictionary } from './types'
 
 const projectMedia = {
   omachi: {
-    cover: '/img/projects/project-1/cover.png',
+    cover: '/img/projects/project-1/cover.jpg',
     gallery: [
-      '/img/projects/project-1/cover.png',
-      '/img/projects/project-1/1.png',
+      '/img/projects/project-1/cover.jpg',
+      '/img/projects/project-1/1.jpg',
       '/img/projects/project-1/2.jpg',
     ],
   },
