@@ -143,16 +143,16 @@ export const dictionaries: Record<'vi' | 'en', Dictionary> = {
       },
       {
         id: 'facebook-launch',
-        title: 'Ra mắt thương hiệu HMedia trên Facebook',
+        title: 'Ra mắt thương hiệu HDMedia trên Facebook',
         category: 'Social Content',
         year: '2024',
         industry: 'Sự kiện & Thương hiệu',
         tool: 'Facebook',
-        client: 'HMedia',
+        client: 'HDMedia',
         summary:
-          'Xây dựng chiến dịch ra mắt thương hiệu HMedia trên Facebook: từ nhận diện thương hiệu, nội dung truyền thông đến tổ chức sự kiện launch, nhằm giới thiệu thương hiệu/sản phẩm và thu hút cộng đồng người theo dõi ngay từ giai đoạn đầu.',
+          'Xây dựng chiến dịch ra mắt thương hiệu HDMedia trên Facebook: từ nhận diện thương hiệu, nội dung truyền thông đến tổ chức sự kiện launch, nhằm giới thiệu thương hiệu/sản phẩm và thu hút cộng đồng người theo dõi ngay từ giai đoạn đầu.',
         challenge:
-          'Xây dựng và vận hành fanpage Facebook của HMedia. Thiết kế logo cùng hệ thống hình ảnh nhận diện. Lên ý tưởng, viết kịch bản và sản xuất nội dung truyền thông. Tham gia làm diễn viên/mẫu ảnh trong các ấn phẩm. Phối hợp tổ chức sự kiện ra mắt thương hiệu.',
+          'Xây dựng và vận hành fanpage Facebook của HDMedia. Thiết kế logo cùng hệ thống hình ảnh nhận diện. Lên ý tưởng, viết kịch bản và sản xuất nội dung truyền thông. Tham gia làm diễn viên/mẫu ảnh trong các ấn phẩm. Phối hợp tổ chức sự kiện ra mắt thương hiệu.',
         solution:
           'Xây dựng nhận diện thương hiệu. Quản lý nội dung Facebook. Thiết kế hình ảnh cơ bản. Lên kịch bản và sản xuất content. Làm việc nhóm và tổ chức sự kiện.',
         ...projectMedia.facebook,
@@ -289,16 +289,16 @@ export const dictionaries: Record<'vi' | 'en', Dictionary> = {
       },
       {
         id: 'facebook-launch',
-        title: 'HMedia Brand Launch on Facebook',
+        title: 'HDMedia Brand Launch on Facebook',
         category: 'Social Content',
         year: '2024',
         industry: 'Event & Branding',
         tool: 'Facebook',
-        client: 'HMedia',
+        client: 'HDMedia',
         summary:
-          'Led the HMedia brand launch on Facebook — from visual identity and content communications to the launch event — to introduce the brand/product and grow an early community of followers.',
+          'Led the HDMedia brand launch on Facebook — from visual identity and content communications to the launch event — to introduce the brand/product and grow an early community of followers.',
         challenge:
-          'Built and managed the HMedia Facebook page. Designed the logo and brand visual system. Ideated, scripted, and produced campaign content. Appeared as talent/model in key assets. Collaborated on organizing the brand launch event.',
+          'Built and managed the HDMedia Facebook page. Designed the logo and brand visual system. Ideated, scripted, and produced campaign content. Appeared as talent/model in key assets. Collaborated on organizing the brand launch event.',
         solution:
           'Brand identity building. Facebook content management. Basic visual design. Scripting and content production. Teamwork and event organization.',
         ...projectMedia.facebook,
